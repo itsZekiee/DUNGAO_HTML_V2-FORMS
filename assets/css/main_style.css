@@ -217,42 +217,53 @@ img {
 
 /* =========  HOME  ========= */
 .home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
     background-image: url("../media/media_one.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+  }
+  
 .home_con {
     position: relative;
     row-gap: 2rem;
-    left: -15rem;
+    left: -2rem;
+}
+
+.home_social-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.home_social {
+    position: relative;
+    font-size: 15px;
+    top: 3rem;
+    left: 3rem;
+    padding-right: 10rem;
+    display: grid;
+    justify-items: center;
+    row-gap: 3.5rem;
+    margin-right: auto;
 }
 
 .home_data {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5rem; 
-}
-
-.home_social {
-    position: absolute;
-    font-size: 1rem;
-    top:.9rem;
-    left: -3rem;
-    display: grid;
-    justify-items: center;
-    row-gap: 3.5rem;
+    align-items: flex-start;
+    margin-top: 5rem;
+    margin-left: -5rem;
 }
 
 .home_social-follow {
     font-weight: var(--font-medium);
-    font-size: var(--smaller-font-size);
     color: var(--first-color);
     position: relative;
     transform: rotate(90deg);
@@ -275,7 +286,7 @@ img {
 }
 
 .home_social-link {
-    font-size: 1rem;
+    font-size: 20px;
     color: var(--primary-color);
     transition:.3s;
 }
@@ -296,16 +307,18 @@ img {
 }
 
 .button {
-    width: 30%;
+    width: 24%;
     display: inline-block;
     background-color: var(--primary-color);
     color: var(--main-background);
     border: none;
-    padding: 1rem 2rem; 
+    padding: 1rem 1rem; 
     margin-top: var(--mb-2);
     cursor: pointer;
     transition: all 0.3s ease 0s;
     border-radius: 0.25rem; 
+    font-size: 0.875rem;
+    text-align: center;
 }
 
 .button:hover {
@@ -339,6 +352,7 @@ img {
         box-shadow: 0 0 0 2px var(--secondary-color);
     }
 }
+
 
 /* =========  MENU  ========= */
 .menu {
